@@ -30,9 +30,17 @@ Deno.serve(async (req) => {
   try { corpo = await req.json(); } catch { return new Response("json invalido", { status: 400 }); }
 
   const { data: cfgs } = await db.from("membros_config").select("chave,valor")
-    .in("chave", ["hotmart_hottok", "hotmart_ofertas"]);
+    .in("chave", ["hotmart_hottok", "hotmart_ofertas", "hotmart_aprender"]);
   const cfg = Object.fromEntries((cfgs || []).map((c: any) => [c.chave, c.valor]));
   const hottok = (req.headers.get("x-hotmart-hottok") || corpo?.hottok || "").trim();
+  // Aprender o hottok sem ninguém copiá-lo à mão: com membros_config.hotmart_aprender = '1'
+  // e nenhum hottok gravado, o PRIMEIRO POST que trouxer um hottok (o "Enviar teste" da
+  // Hotmart) grava o dele e apaga a trava. Daí em diante só esse hottok entra.
+  if (!cfg.hotmart_hottok && cfg.hotmart_aprender === "1" && hottok.length >= 20) {
+    await db.from("membros_config").upsert({ chave: "hotmart_hottok", valor: hottok }, { onConflict: "chave" });
+    await db.from("membros_config").delete().eq("chave", "hotmart_aprender");
+    cfg.hotmart_hottok = hottok;
+  }
   if (!cfg.hotmart_hottok || hottok !== cfg.hotmart_hottok) return new Response("hottok invalido", { status: 401 });
   let OFERTAS: Record<string, string[]> = {};
   try { OFERTAS = JSON.parse(cfg.hotmart_ofertas || "{}"); } catch { /* mapa quebrado: cai no padrao */ }
