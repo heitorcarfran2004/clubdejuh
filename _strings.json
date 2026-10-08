@@ -1,0 +1,489 @@
+{
+ "app.html": [
+  {
+   "linha": 864,
+   "texto": "Área de miembros"
+  },
+  {
+   "linha": 874,
+   "texto": "¡Qué bueno verte por aquí!"
+  },
+  {
+   "linha": 875,
+   "texto": "Todo lo que compraste está disponible, para siempre."
+  },
+  {
+   "linha": 878,
+   "texto": "Continúa donde lo dejaste"
+  },
+  {
+   "linha": 908,
+   "texto": "Paso a paso en video"
+  },
+  {
+   "linha": 923,
+   "texto": "voltar-video toque"
+  },
+  {
+   "linha": 943,
+   "texto": "Ver el"
+  },
+  {
+   "linha": 945,
+   "texto": "passo-video prox"
+  },
+  {
+   "linha": 951,
+   "texto": "A continuación"
+  },
+  {
+   "linha": 971,
+   "texto": "mailto:suportedigitalht@gmail.com"
+  },
+  {
+   "linha": 976,
+   "texto": "sair()"
+  },
+  {
+   "linha": 1001,
+   "texto": "Página anterior"
+  },
+  {
+   "linha": 1008,
+   "texto": "Página"
+  },
+  {
+   "linha": 1014,
+   "texto": "Página siguiente"
+  },
+  {
+   "linha": 1030,
+   "texto": "Desliza la página hacia el lado para pasar · tócala para ampliar"
+  },
+  {
+   "linha": 1052,
+   "texto": "Cómo leer un gráfico de mostacilla"
+  },
+  {
+   "linha": 1081,
+   "texto": "acesso.js"
+  },
+  {
+   "linha": 1207,
+   "texto": "Fácil"
+  },
+  {
+   "linha": 1220,
+   "texto": "sem sessão"
+  },
+  {
+   "linha": 1237,
+   "texto": "páginas · aún no empezaste"
+  },
+  {
+   "linha": 1247,
+   "texto": "Colección Completa"
+  },
+  {
+   "linha": 1251,
+   "texto": "Libere os ' + CATALOGO.bonus.length + ' bonos"
+  },
+  {
+   "linha": 1252,
+   "texto": "<small>Vienen en la Colección Completa</small></span>"
+  },
+  {
+   "linha": 1252,
+   "texto": "Vienen en la Colección Completa"
+  },
+  {
+   "linha": 1263,
+   "texto": "páginas</span>"
+  },
+  {
+   "linha": 1263,
+   "texto": "' + b.paginas + ' páginas"
+  },
+  {
+   "linha": 1276,
+   "texto": "páginas"
+  },
+  {
+   "linha": 1279,
+   "texto": "Abrir ahora</span>"
+  },
+  {
+   "linha": 1279,
+   "texto": "' + SETA + 'Abrir ahora"
+  },
+  {
+   "linha": 1293,
+   "texto": "<div class=\"pilula-video a\"><span class=\"ic\">"
+  },
+  {
+   "linha": 1293,
+   "texto": "pilula-video a"
+  },
+  {
+   "linha": 1295,
+   "texto": "<div class=\"pilula-video b\"><span class=\"ic\">"
+  },
+  {
+   "linha": 1295,
+   "texto": "pilula-video b"
+  },
+  {
+   "linha": 1301,
+   "texto": "<h2>Área bloqueada</h2>"
+  },
+  {
+   "linha": 1301,
+   "texto": "Área bloqueada"
+  },
+  {
+   "linha": 1302,
+   "texto": "<p>Los videos de las confecciones no forman parte de tu compra, por eso esta área está bloqueada."
+  },
+  {
+   "linha": 1303,
+   "texto": "En cuanto se apruebe la compra de los videos, las clases aparecen aquí.</p>"
+  },
+  {
+   "linha": 1309,
+   "texto": "<a class=\"cartao-video"
+  },
+  {
+   "linha": 1309,
+   "texto": "cartao-video' + (comVideos ? '' : ' trancado') + '"
+  },
+  {
+   "linha": 1311,
+   "texto": "<span class=\"mini-video\">"
+  },
+  {
+   "linha": 1313,
+   "texto": "GRÁFICO</span>"
+  },
+  {
+   "linha": 1313,
+   "texto": "' + CONTAS + 'GRÁFICO"
+  },
+  {
+   "linha": 1317,
+   "texto": "<span class=\"pe-video\">"
+  },
+  {
+   "linha": 1320,
+   "texto": "</b><small>Confección completa · <em>gráfico incluido</em></small></span>"
+  },
+  {
+   "linha": 1320,
+   "texto": "Confección completa ·"
+  },
+  {
+   "linha": 1320,
+   "texto": "gráfico incluido"
+  },
+  {
+   "linha": 1321,
+   "texto": "</span>Confección completa"
+  },
+  {
+   "linha": 1332,
+   "texto": "páginas en total"
+  },
+  {
+   "linha": 1340,
+   "texto": "<span class=\"botao-linha suave\">Abrir"
+  },
+  {
+   "linha": 1340,
+   "texto": "Abrir' + SETA + '"
+  },
+  {
+   "linha": 1375,
+   "texto": "páginas en PDF para imprimir los gráficos y consultar"
+  },
+  {
+   "linha": 1376,
+   "texto": "incluso sin internet. El archivo es tuyo para siempre."
+  },
+  {
+   "linha": 1614,
+   "texto": "item-fila' + (k === i ? ' agora' : '') + '"
+  },
+  {
+   "linha": 1615,
+   "texto": "<span class=\"marca-agora\">AHORA</span>"
+  },
+  {
+   "linha": 1628,
+   "texto": "Confección"
+  },
+  {
+   "linha": 1640,
+   "texto": ")\" aria-label=\"Ampliar el gráfico\">"
+  },
+  {
+   "linha": 1640,
+   "texto": "Ampliar el gráfico"
+  },
+  {
+   "linha": 1641,
+   "texto": "\" alt=\"Gráfico del arete"
+  },
+  {
+   "linha": 1641,
+   "texto": "Gráfico del arete ' + g.nome + '"
+  },
+  {
+   "linha": 1644,
+   "texto": "</span>Gráfico de este arete</div>"
+  },
+  {
+   "linha": 1644,
+   "texto": "Gráfico de este arete"
+  },
+  {
+   "linha": 1656,
+   "texto": "<p class=\"nota-grafico\"><span class=\"b\"></span><span>Deja el gráfico abierto al lado del video:"
+  },
+  {
+   "linha": 1657,
+   "texto": "<b>cada bolita es una mostacilla</b>, en el color y la posición correctos.</span></p>"
+  },
+  {
+   "linha": 1657,
+   "texto": "cada bolita es una mostacilla"
+  },
+  {
+   "linha": 1657,
+   "texto": ", en el color y la posición correctos."
+  },
+  {
+   "linha": 1693,
+   "texto": "los gráficos, de cualquier técnica: cada cuadrito o bolita del dibujo representa"
+  },
+  {
+   "linha": 1696,
+   "texto": "Por dónde empezar"
+  },
+  {
+   "linha": 1697,
+   "texto": "Todo gráfico tiene un punto de partida, casi siempre marcado con una <b>estrella</b>, una flecha o el número 1. Suele estar en una de las esquinas de abajo."
+  },
+  {
+   "linha": 1698,
+   "texto": "Si el gráfico no tiene ninguna marca, empieza por la <b>fila más ancha</b> de la pieza: es la más fácil de contar y la que sostiene la forma del dibujo."
+  },
+  {
+   "linha": 1698,
+   "texto": "fila más ancha"
+  },
+  {
+   "linha": 1702,
+   "texto": "error número uno"
+  },
+  {
+   "linha": 1703,
+   "texto": "Marca con lápiz cada fila terminada, directo en el gráfico impreso. En una pieza de 200 filas, eso es lo que evita perder el lugar."
+  },
+  {
+   "linha": 1712,
+   "texto": "Aquí las filas quedan <b>desplazadas media mostacilla</b> una respecto a la otra, como ladrillos en una pared — y el gráfico lo muestra."
+  },
+  {
+   "linha": 1713,
+   "texto": "hilo que une"
+  },
+  {
+   "linha": 1716,
+   "texto": "El punto red forma <b>rombos abiertos</b>, y el gráfico es un mapa de bolitas en vez de cuadritos. Es la técnica de los collares y pulseras de trama calada."
+  },
+  {
+   "linha": 1718,
+   "texto": "Fíjate que el gráfico suele mostrar solo <b>dos módulos</b>: el resto es repetición pura. No necesitas un gráfico del collar entero."
+  },
+  {
+   "linha": 1718,
+   "texto": "dos módulos"
+  },
+  {
+   "linha": 1720,
+   "texto": "Crochet: ensartar todo antes"
+  },
+  {
+   "linha": 1721,
+   "texto": "Este es el que más confunde, y es el más importante de entender: <b>no lees el gráfico mientras trabajas</b>."
+  },
+  {
+   "linha": 1721,
+   "texto": "no lees el gráfico mientras trabajas"
+  },
+  {
+   "linha": 1728,
+   "texto": "Los tres errores más comunes"
+  },
+  {
+   "linha": 1729,
+   "texto": "<b>Sentido equivocado.</b> Leer todas las filas de izquierda a derecha, en vez de zigzag. El dibujo sale espejado y solo te das cuenta al final."
+  },
+  {
+   "linha": 1730,
+   "texto": "Tensión irregular."
+  },
+  {
+   "linha": 1731,
+   "texto": "<b>Perder el hilo.</b> No marcar dónde te quedaste. En un gráfico grande, empezar de cero por no encontrar la fila es lo que más hace que la gente abandone."
+  },
+  {
+   "linha": 1745,
+   "texto": "<span class=\"chip rosa\">Guía rápida</span>"
+  },
+  {
+   "linha": 1745,
+   "texto": "Guía rápida"
+  },
+  {
+   "linha": 1746,
+   "texto": "<h1>Cómo leer un gráfico de mostacilla</h1>"
+  },
+  {
+   "linha": 1747,
+   "texto": "<p>Del primer cuadrito a la pieza terminada. Sirve para todos los proyectos de la colección — y para cualquier gráfico que encuentres por ahí.</p>"
+  },
+  {
+   "linha": 1747,
+   "texto": "Del primer cuadrito a la pieza terminada. Sirve para todos los proyectos de la colección — y para cualquier gráfico que encuentres por ahí."
+  },
+  {
+   "linha": 1750,
+   "texto": "<div class=\"guia-secao\"><h2>Las cuatro técnicas</h2><i></i></div>"
+  },
+  {
+   "linha": 1750,
+   "texto": "Las cuatro técnicas"
+  },
+  {
+   "linha": 1751,
+   "texto": "Lo que cambia de una a otra no es el gráfico en sí — es el"
+  },
+  {
+   "linha": 1751,
+   "texto": "camino que hace la aguja"
+  },
+  {
+   "linha": 1756,
+   "texto": "<h3>Empieza por un proyecto FÁCIL</h3>"
+  },
+  {
+   "linha": 1756,
+   "texto": "Empieza por un proyecto FÁCIL"
+  },
+  {
+   "linha": 1757,
+   "texto": "Gráfico pequeño, tres colores, dibujo grande. Después de una pieza entera, leer cualquier gráfico se vuelve automático — y ahí los AVANZADOS dejan de asustar."
+  }
+ ],
+ "index.html": [
+  {
+   "linha": 7,
+   "texto": "Entrar · Mostacillas de Juh"
+  },
+  {
+   "linha": 106,
+   "texto": "Área de miembros"
+  },
+  {
+   "linha": 116,
+   "texto": "tu@correo.com"
+  },
+  {
+   "linha": 126,
+   "texto": "acesso.js"
+  },
+  {
+   "linha": 140,
+   "texto": "Escribe un correo válido."
+  },
+  {
+   "linha": 149,
+   "texto": "Si el problema continúa, escribe a suportedigitalht@gmail.com."
+  },
+  {
+   "linha": 155,
+   "texto": "No pudimos verificar tu acceso ahora. Inténtalo de nuevo en un momento."
+  }
+ ],
+ "catalogo.js": [
+  {
+   "linha": 7,
+   "texto": "/pag-001.webp ate pag-"
+  },
+  {
+   "linha": 45,
+   "texto": "Abrir ahora"
+  },
+  {
+   "linha": 55,
+   "texto": "Bolsitas tejidas en mostacilla, con las medidas de cada pieza."
+  },
+  {
+   "linha": 60,
+   "texto": "Patrones étnicos, florales y geométricos tejidos en telar."
+  },
+  {
+   "linha": 65,
+   "texto": "Collares de crochet con mostacilla, del clásico al colorido."
+  },
+  {
+   "linha": 70,
+   "texto": "Figuras tejidas para colgar en cadena o cordón."
+  },
+  {
+   "linha": 75,
+   "texto": "Diademas forradas de mostacilla, de lo folclórico a lo colorido."
+  },
+  {
+   "linha": 100,
+   "texto": ".webp e o PDF de uma página em pdf/graficos/"
+  },
+  {
+   "linha": 106,
+   "texto": "Fácil"
+  },
+  {
+   "linha": 107,
+   "texto": "4,5 cm de diámetro"
+  },
+  {
+   "linha": 107,
+   "texto": "Rosetón"
+  },
+  {
+   "linha": 110,
+   "texto": "3,5 cm de diámetro"
+  },
+  {
+   "linha": 112,
+   "texto": "4 cm de diámetro"
+  },
+  {
+   "linha": 126,
+   "texto": "Gota Arcoíris"
+  },
+  {
+   "linha": 128,
+   "texto": "Sandía con Flecos"
+  },
+  {
+   "linha": 132,
+   "texto": "Arcoíris Nocturno"
+  },
+  {
+   "linha": 143,
+   "texto": "5 cm de diámetro"
+  }
+ ],
+ "acesso.js": []
+}

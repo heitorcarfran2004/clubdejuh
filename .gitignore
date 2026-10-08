@@ -1,0 +1,8 @@
+# Os PDFs de entrega ficam de fora: sao 662 MB, porque cada pagina e um PNG sem
+# perda. O GitHub barra arquivo acima de 100 MB, entao eles nunca chegariam em
+# producao. Esta pasta e o arquivo-mestre, para reimpressao e para regerar.
+#
+# O QUE O APP ENTREGA E OUTRA COISA: pdf/, versionada, com as mesmas paginas
+# recomprimidas em JPEG (662 MB -> 87 MB). Quem mexer nas paginas roda
+# scripts/app-pdfs.sh para refazer as duas.
+arquivos/

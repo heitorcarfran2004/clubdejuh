@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#C32E56">
+<title>Entrar · Chaquiras de Juh</title>
+<link rel="apple-touch-icon" href="assets/logo-180.png">
+<link rel="icon" href="assets/logo-96.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" onload="this.media='all'"
+  href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@400;500;600;700;800&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<style>
+:root{
+  --coral:#E5446E; --coral-esc:#C32E56; --coral-nevoa:#FDEFF3;
+  --turq:#12707C; --turq-esc:#0B5158; --turq-claro:#1E97A4;
+  --mostarda:#F0A81E; --mostarda-claro:#FFF3DA;
+  --tinta:#233039; --cinza:#5F7079;
+  --branco:#fff; --creme:#FDF9F4; --borda:#EFE6DC;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --serif:"Fraunces",Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:var(--sans); color:var(--tinta); background:#B62A50;
+  display:flex; align-items:center; justify-content:center; padding:24px 20px;
+  -webkit-font-smoothing:antialiased;
+}
+/* o fundo puxa o rosa da logo, com um respiro de turquesa no canto oposto */
+body::before{
+  content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(circle at 15% 6%, rgba(229,68,110,.85), transparent 46%),
+    radial-gradient(circle at 85% 94%, rgba(18,112,124,.42), transparent 48%);
+}
+.caixa{
+  position:relative; z-index:1; width:100%; max-width:390px;
+  background:var(--branco); border-radius:26px; padding:30px 26px 26px;
+  box-shadow:0 26px 70px rgba(0,0,0,.34);
+}
+.caixa .logo{
+  /* display:block e obrigatorio: sem ele a img fica inline, o margin auto nao centraliza
+     e ela divide a linha com o selo de ÁREA DE MEMBROS */
+  display:block; width:86px; height:86px; border-radius:50%; margin:0 auto 14px;
+  box-shadow:0 0 0 3px var(--branco), 0 0 0 6px #FBDCE5, 0 10px 26px rgba(0,0,0,.14);
+}
+.marca{text-align:center; margin-bottom:26px}
+.selo{
+  display:inline-block; background:var(--coral); color:#fff; font-weight:800;
+  font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  padding:6px 14px; border-radius:999px; margin-bottom:14px;
+}
+.marca h1{
+  font-family:var(--serif); font-weight:700; font-size:27px; line-height:1.12;
+  color:var(--coral); letter-spacing:-.015em;
+}
+.marca p{margin-top:8px; font-size:13.5px; color:var(--cinza); line-height:1.45}
+
+label{display:block; font-size:11.5px; font-weight:800; color:var(--tinta);
+  letter-spacing:.04em; text-transform:uppercase; margin:0 0 6px 2px}
+.campo{margin-bottom:16px}
+input{
+  width:100%; font-family:inherit; font-size:15.5px; color:var(--tinta);
+  background:var(--creme); border:1.5px solid var(--borda); border-radius:14px;
+  padding:14px 15px; transition:border-color .15s, box-shadow .15s, background .15s;
+}
+input:focus{outline:none; background:var(--branco); border-color:var(--coral); box-shadow:0 0 0 3px rgba(229,68,110,.15)}
+input::placeholder{color:#A9B4BA}
+
+button{
+  width:100%; font-family:inherit; font-size:15.5px; font-weight:800;
+  letter-spacing:.02em; color:#fff; background:var(--coral); border:0;
+  border-radius:14px; padding:16px; cursor:pointer; margin-top:8px;
+  box-shadow:0 8px 20px rgba(229,68,110,.34); transition:transform .12s, opacity .12s;
+}
+button:active{transform:scale(.97); opacity:.92}
+button[disabled]{opacity:.7; cursor:default}
+
+.link{
+  display:block; text-align:center; margin-top:18px; font-size:13px;
+  color:var(--cinza); text-decoration:none;
+}
+.link:hover{color:var(--coral); text-decoration:underline}
+
+.aviso{
+  margin-top:22px; padding:11px 13px; background:var(--mostarda-claro);
+  border-radius:10px; font-size:11.5px; line-height:1.5; color:#7A5A12;
+  text-align:center;
+}
+.erro{
+  display:none; margin-bottom:14px; padding:10px 12px; background:var(--coral-nevoa);
+  border-left:3px solid var(--coral); border-radius:8px;
+  font-size:12.5px; color:var(--coral-esc); line-height:1.45;
+}
+.erro.on{display:block}
+</style>
+</head>
+<body>
+
+<main class="caixa">
+  <div class="marca">
+    <img class="logo" src="assets/logo-192.webp" alt="Chaquiras de Juh" width="86" height="86">
+    <span class="selo">Área de miembros</span>
+    <h1>Chaquiras de Juh</h1>
+    <p>Usa el mismo correo de tu compra. Sin contraseña: el acceso es solo por correo.</p>
+  </div>
+
+  <div class="erro" id="erro"></div>
+
+  <form id="form" novalidate>
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" inputmode="email" enterkeyhint="go" autofocus required>
+    </div>
+    <button type="submit">ENTRAR</button>
+  </form>
+
+  <p class="aviso">
+    Comprou agora? O acesso é liberado assim que o pagamento é aprovado.
+  </p>
+</main>
+
+<script src="acesso.js"></script>
+<script>
+// O login pergunta à Edge Function o que esse e-mail comprou (ACESSO.consultar) e guarda
+// a resposta: é ela que decide o que o app abre. Sem senha: o e-mail é a chave.
+var form = document.getElementById('form');
+var erro = document.getElementById('erro');
+var botao = form.querySelector('button');
+
+// quem já entrou neste aparelho vai direto para o app
+if (ACESSO.email()) location.replace('app.html');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  var email = document.getElementById('email').value.trim().toLowerCase();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return mostrarErro('Escribe un correo válido.');
+
+  botao.disabled = true;
+  botao.textContent = 'ENTRANDO…';
+  ACESSO.consultar(email).then(function (r) {
+    // só entra quem tem compra registrada com esse e-mail
+    if (!r.registrado) {
+      liberarBotao();
+      return mostrarErro('No encontramos ninguna compra con este correo. Usa el mismo correo del pago. ' +
+        'Si el problema continúa, escribe a suportedigitalht@gmail.com.');
+    }
+    ACESSO.entrar(email, r.itens);
+    location.href = 'app.html';
+  }).catch(function () {
+    liberarBotao();
+    mostrarErro('No pudimos verificar tu acceso ahora. Inténtalo de nuevo en un momento.');
+  });
+});
+
+function liberarBotao() {
+  botao.disabled = false;
+  botao.textContent = 'ENTRAR';
+}
+
+function mostrarErro(msg) {
+  erro.textContent = msg;
+  erro.classList.add('on');
+}
+</script>
+
+</body>
+</html>
