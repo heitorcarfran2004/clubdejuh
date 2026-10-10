@@ -28,6 +28,12 @@ var ACESSO = (function () {
   var LOCAL = (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
   var TUDO = ['principal', 'bonus', 'bolsas', 'pulseiras', 'colares', 'pingentes', 'tiaras', 'videos'];
 
+  // REGRA DA LATAM (10/10/2026, pedido do Heitor): aqui NAO se trava extra para subir
+  // LTV. Quem comprou qualquer oferta recebe TUDO, para reduzir reembolso ao maximo.
+  // Quem nao comprou continua sem nada (SEM_REGISTRO).
+  // Isto vale so neste app (clubdejuh). O app brasileiro segue item por item.
+  var TUDO_PARA_COMPRADOR = true;
+
   // Promise<{itens, registrado}> — registrado=false quando o e-mail não tem compra
   function consultar(email) {
     if (LOCAL) return Promise.resolve({ itens: TUDO.slice(), registrado: true });
@@ -39,7 +45,8 @@ var ACESSO = (function () {
       return r.json();
     }).then(function (d) {
       var itens = d.itens || [];
-      return itens.length ? { itens: itens, registrado: true } : { itens: SEM_REGISTRO.slice(), registrado: false };
+      if (!itens.length) return { itens: SEM_REGISTRO.slice(), registrado: false };
+      return { itens: TUDO_PARA_COMPRADOR ? TUDO.slice() : itens, registrado: true };
     });
   }
 
